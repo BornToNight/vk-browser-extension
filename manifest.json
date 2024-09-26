@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Окрашивание непрочитанных сообщений VK",
+	"version": "1.0",
+	"description": "Окрашивает фон непрочитанных сообщений, которые отправили вы",
+	"icons": {
+		"128": "128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [ "https://vk.com/im/*" ],
+			"js": [ "content.js" ]
+		}
+	],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "128.png"
+      }
+    },
+    "permissions": ["storage", "scripting", "activeTab"]
+}
