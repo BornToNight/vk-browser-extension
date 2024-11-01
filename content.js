@@ -44,4 +44,6 @@ setTimeout(() => {
         handleDOMChange()
     })
 
-}, 4000)
+}, 7000)
+
+setInterval(handleDOMChange(), 5000)
