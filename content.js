@@ -16,7 +16,7 @@ function handleDOMChange() {
     for (let i = 0; i < messages.length; i++) {
         const message = messages[i].querySelector('.ConvoMessageInfoWithoutBubbles__statusIcon')
         if (!messages[i].parentNode.parentNode.className.includes('messageBlockSelected')) {
-            if (!message?.querySelector('use').getAttribute('xlink:href').includes("double") && message) {
+            if (!message?.querySelector('svg').getAttribute('class').includes("double") && message) {
                 messages[i].style.backgroundColor = color
             } else {
                 messages[i].style.backgroundColor = null
